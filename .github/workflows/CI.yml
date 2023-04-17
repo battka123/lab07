@@ -3,7 +3,7 @@ name: Docker
 on:
   push:
     branches: 
-      main 
+      master 
 
 jobs:
   docker:
@@ -14,5 +14,5 @@ jobs:
 
       - name: Build
         run: |
-          sudo docker build -t myapp ./hello_world
+          sudo docker build -t myapp ./hello
           sudo docker run myapp
