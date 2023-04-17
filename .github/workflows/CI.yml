@@ -15,5 +15,5 @@ jobs:
       - name: Build
       # создаю билд и запускаю докер
         run: |
-          sudo docker build -t myapp ./hello_world
+          sudo docker build -t myapp ./hello
           sudo docker run myapp
